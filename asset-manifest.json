@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/floating-message-bauble/static/css/main.1066ee1b.css",
+    "main.js": "/floating-message-bauble/static/js/main.9632ae8d.js",
+    "static/js/453.c5dc8c5a.chunk.js": "/floating-message-bauble/static/js/453.c5dc8c5a.chunk.js",
+    "index.html": "/floating-message-bauble/index.html",
+    "main.1066ee1b.css.map": "/floating-message-bauble/static/css/main.1066ee1b.css.map",
+    "main.9632ae8d.js.map": "/floating-message-bauble/static/js/main.9632ae8d.js.map",
+    "453.c5dc8c5a.chunk.js.map": "/floating-message-bauble/static/js/453.c5dc8c5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1066ee1b.css",
+    "static/js/main.9632ae8d.js"
+  ]
+}
