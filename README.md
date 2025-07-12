@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Floating Message Bubbles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application is a video comment overlay tool, inspired by [craftzdog](https://github.com/craftzdog) (Takuya Matsuyama). Takuya demonstrated his video creation process on his channel ([video](https://youtu.be/zu_vqAWHy_E?si=0_E3y6meoqjUgJKV)), where he utilized a self-built floating message bubble system. Although his repository was previously public, it is no longer available.
 
-## Available Scripts
+My intention is to launch a YouTube channel with a similar style to Takuya's, where I use on-screen comments instead of my voice to convey thoughts.
 
-In the project directory, you can run:
+Therefore, I decided to develop a similar floating message bubble application using JavaScript and React. This application is designed to integrate with a video player, enabling users to add comments that appear as dynamic, floating bubbles over the video content.
 
-### `yarn start`
+The green background facilitates easy chroma keying, allowing for seamless integration of screen recordings into video projects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is currently under active development. Future enhancements include optimizing the message expiration time; I believe Takuya's version dynamically adjusted expiration based on message length, whereas my current implementation uses a fixed 15-second duration. Additionally, the visual style of the message bubbles will be improved in the coming weeks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Demo Website](https://miohitokiri5474.github.io/floating-message-bubbles/)
