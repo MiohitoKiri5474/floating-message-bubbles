@@ -13,7 +13,7 @@ const App = () => {
       text,
       timestamp: Date.now(),
     };
-    setMessages((prevMessages) => [newMessage, ...prevMessages]);
+    setMessages((prevMessages) => [...prevMessages, newMessage]);
     setTypingText(""); // Clear typing indicator on send
   };
 
@@ -36,7 +36,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <MessageList messages={messages} typingText={typingText} />
+      <MessageList messages={messages} />
+      <div className="current-input-container">
+        {typingText && <div className="message typing-indicator">{typingText}</div>}
+      </div>
       <MessageInput onSend={handleAddMessage} onTypingChange={handleTypingChange} />
     </div>
   );

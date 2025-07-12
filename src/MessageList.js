@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MessageList = ({ messages, typingText }) => {
+const MessageList = ({ messages }) => {
   return (
     <div className="message-list">
-      {typingText && <div className="message typing-indicator">{typingText}</div>}
       {messages.map((message) => (
         <div
           key={message.id}
@@ -25,7 +24,6 @@ MessageList.propTypes = {
       expired: PropTypes.bool.isRequired,
     }),
   ).isRequired,
-  typingText: PropTypes.string.isRequired,
 };
 
 export default MessageList;
