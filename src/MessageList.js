@@ -7,7 +7,8 @@ const MessageList = ({ messages }) => {
       {messages.map((message) => (
         <div
           key={message.id}
-          className={`message ${message.expired ? "fade-out" : ""}`}>
+          className={`message ${message.expired ? "fade-out" : ""}`}
+        >
           {message.text}
         </div>
       ))}

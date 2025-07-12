@@ -27,7 +27,7 @@ const App = () => {
     const interval = setInterval(() => {
       const now = Date.now();
       setMessages((prevMessages) =>
-        prevMessages.filter((message) => now - message.timestamp < 3000),
+        prevMessages.filter((message) => now - message.timestamp < 15000),
       );
     }, 1000);
 
@@ -38,9 +38,14 @@ const App = () => {
     <div className="app">
       <MessageList messages={messages} />
       <div className="current-input-container">
-        {typingText && <div className="message typing-indicator">{typingText}</div>}
+        {typingText && (
+          <div className="message typing-indicator">{typingText}</div>
+        )}
       </div>
-      <MessageInput onSend={handleAddMessage} onTypingChange={handleTypingChange} />
+      <MessageInput
+        onSend={handleAddMessage}
+        onTypingChange={handleTypingChange}
+      />
     </div>
   );
 };
