@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import MessageList from "./MessageList";
+import MessageInput from "./MessageInput";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [messages, setMessages] = useState([]);
+
+  const handleAddMessage = (text) => {
+    const newMessage = {
+      id: Date.now(),
+      text,
+      timestamp: Date.now(),
+    };
+    setMessages((prevMessages) => [newMessage, ...prevMessages]);
+  };
+
+  // Automatically remove messages after 15 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = Date.now();
+      setMessages((prevMessages) =>
+        prevMessages.filter((message) => now - message.timestamp < 3000),
+      );
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <MessageList messages={messages} />
+      <MessageInput onSend={handleAddMessage} />
     </div>
   );
-}
+};
 
 export default App;
