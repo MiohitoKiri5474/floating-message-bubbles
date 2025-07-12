@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/floating-message-baubles/static/css/main.1066ee1b.css",
-    "main.js": "/floating-message-baubles/static/js/main.44e76fcd.js",
-    "static/js/453.c5dc8c5a.chunk.js": "/floating-message-baubles/static/js/453.c5dc8c5a.chunk.js",
-    "index.html": "/floating-message-baubles/index.html",
-    "main.1066ee1b.css.map": "/floating-message-baubles/static/css/main.1066ee1b.css.map",
-    "main.44e76fcd.js.map": "/floating-message-baubles/static/js/main.44e76fcd.js.map",
-    "453.c5dc8c5a.chunk.js.map": "/floating-message-baubles/static/js/453.c5dc8c5a.chunk.js.map"
+    "main.css": "/floating-message-bubbles/static/css/main.1066ee1b.css",
+    "main.js": "/floating-message-bubbles/static/js/main.04abba00.js",
+    "static/js/453.c5dc8c5a.chunk.js": "/floating-message-bubbles/static/js/453.c5dc8c5a.chunk.js",
+    "index.html": "/floating-message-bubbles/index.html",
+    "main.1066ee1b.css.map": "/floating-message-bubbles/static/css/main.1066ee1b.css.map",
+    "main.04abba00.js.map": "/floating-message-bubbles/static/js/main.04abba00.js.map",
+    "453.c5dc8c5a.chunk.js.map": "/floating-message-bubbles/static/js/453.c5dc8c5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1066ee1b.css",
-    "static/js/main.44e76fcd.js"
+    "static/js/main.04abba00.js"
   ]
 }
