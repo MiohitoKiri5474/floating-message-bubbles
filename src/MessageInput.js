@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-const MessageInput = ({ onSend }) => {
+const MessageInput = ({ onSend, onTypingChange }) => {
   const [input, setInput] = useState("");
 
   const handleSendMessage = () => {
@@ -11,12 +11,19 @@ const MessageInput = ({ onSend }) => {
     }
   };
 
+  const handleChange = (e) => {
+    setInput(e.target.value);
+    if (onTypingChange) {
+      onTypingChange(e.target.value);
+    }
+  };
+
   return (
     <div className="message-input">
       <input
         type="text"
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={handleChange}
         placeholder="Type a message..."
         onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
       />
@@ -27,6 +34,7 @@ const MessageInput = ({ onSend }) => {
 
 MessageInput.propTypes = {
   onSend: PropTypes.func.isRequired,
+  onTypingChange: PropTypes.func.isRequired,
 };
 
 export default MessageInput;
